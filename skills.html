@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/skills.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@2.8.0"></script>
+
+
+
+
+    <title>Taha Haqqani</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: black">
+        <a target="_self" class="navbar-brand" href="index.html">TAHA</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+              <a target="_self" class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a target="_self" class="nav-link" href="aboutMe.html">About Me</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link" href="experiences.html" id="navbarDropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                  Portfolio
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                  <a class="dropdown-item" href="experiences.html">Experiences</a>
+                  <a class="dropdown-item" href="projects.html">Projects</a>
+              </li>
+            <li class="nav-item active">
+                <a class="nav-link" href="#">Skills<span class="sr-only">(current)</span></a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="service.html">Service</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#"></a>
+            </li>
+          </ul>
+          <ul class="navbar-nav ml-auto">
+           <li class="nav-item">
+               <a href="" class="nav-link">Contact Me</a>
+           </li>
+          </ul>
+        </div>
+    </nav>
+    <div class="resume container-fluid d-flex justify-content-center">
+        <h3>Resume</h3>
+        <a href="Resume - Muhammad Taha Haqqani.pdf" target="_blank" and rel="noopener noreferrer" class="btn btn-dark" role="button">Download</a>
+    </div>
+    <div class="container d-flex-column align-items-center mt-4">
+        <h1 class="display-4 text-center">Technical Skills</h1>
+        <canvas id="myChart"></canvas>
+        <script>
+        var ctx = document.getElementById('myChart').getContext('2d');
+        var chart = new Chart(ctx, {
+        // The type of chart we want to create
+        type: 'horizontalBar',
+        // The data for our dataset
+        data: {
+            labels: ['C++', 'Python', 'Java', 'JavaScript', 'HTML', 'CSS', 'MATLAB', 'BootStrap', 'Linux', 'Spring', 'Adobe XD', 'NodeJS', 'Angular', 'Kafka'],
+            datasets: [{
+                label: 'Comfort Level',
+                backgroundColor: 'rgb(255, 99, 132)',
+                borderColor: 'rgb(255, 99, 132)',
+                data: [8, 5, 7, 5, 8, 8, 6, 8, 6, 3, 3, 2, 1, 4, 3,3],
+                minBarLength: 0,
+                maxBarLength: 10
+            }]
+        },
+        options: {
+            scales: {
+                xAxes: [{
+                    display: false,
+                    gridLines: {
+                        color: "rgba(0, 0, 0, 0)",
+                    },
+                    ticks: {
+                        suggestedMin: 0,
+                        suggestedMax: 10
+                    }
+                }],
+                yAxes: [{
+                    ticks: {
+                        fontColor: "white"
+                    },
+                    gridLines: {
+                        color: "rgba(0, 0, 0, 0)",
+                    }   
+                }]
+            },
+            response: true
+        }
+        // Configuration options go here
+      
+        });
+        </script>
+    </div>
+    <h1 class="display-4 text-center p-3 mt-3">Non-Technical Skills</h1>
+    <div class="container">
+        <div class="row ">
+            <div id="circles" class="col-lg-4">
+                <p>Design Thinking</p>
+            </div>
+            <div id="circles" class="col-lg-4">
+                <p>Public Speaking</p>
+            </div>
+            <div id="circles" class="col-lg-4">
+                <p>Project Management</p>
+            </div>
+        </div>
+        <div class="row">
+            <div id="circles" class="col-lg-4">
+                <p>Content Writing</p>
+            </div>
+            <div id="circles" class="col-lg-4">
+                <p>Communication</p>
+            </div>
+            <div id="circles" class="col-lg-4">
+                <p>Time Management</p>
+            </div>
+        </div>
+    </div>
+ 
+    <script src="js/skills.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>    
+</body>
+</html>

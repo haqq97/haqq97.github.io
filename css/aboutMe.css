@@ -1,0 +1,157 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background: #000000;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #434343, #000000);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #434343, #000000); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+
+.nav-link {
+    position: relative;
+}
+
+.nav-link:before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: #FFF;
+    visibility: hidden;
+    transform: scaleX(0);
+    transition: all 0.3s ease-in-out;
+  }
+
+  .nav-link:hover:before {
+    visibility: visible;
+    transform: scaleX(1);
+  }
+
+#about {
+    color: white;
+}
+
+#howdy {
+    color: rgb(218, 52, 52);
+}
+
+.dropdown-menu {
+    background-color: black;
+  }
+  
+  .dropdown-item {
+    color: white;
+  }
+  
+  .dropdown:hover .dropdown-menu {
+    display: block;
+    margin-top: 0;
+  }
+
+  .jumbotron{
+    background-color: black;
+    animation: pulse 5s;
+  }
+  
+  @keyframes pulse {
+    0% {
+      background-color: grey;
+    }
+    100% {
+      background-color: black;
+    }
+  }
+  
+p {
+  color: white;
+}
+
+.typewriter {
+  font-weight: 900;
+  letter-spacing: 1rem;
+  overflow: hidden; /* Ensures the content is not revealed until the animation */
+  white-space: nowrap; /* Keeps the content on a single line */
+   /* Gives that scrolling effect as the typing happens */
+  animation: 
+    typing 3.5s steps(30, end),
+    blink-caret .5s step-end infinite;
+}
+
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+#taha {
+  font-weight: 800;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  
+}
+
+#texas {
+  font-weight: 800;
+  font-size: larger;
+  letter-spacing: 2px;
+  color:rgb(163, 4, 4);
+}
+
+hr {
+  padding: 2px;
+  margin: 5px;
+  border: 0;
+  height: 1px;
+  background-image: linear-gradient(to right, rgba(250, 250, 250, 0), rgba(252, 250, 250, 0.75), rgba(248, 248, 248, 0));
+}
+
+h2 {
+  color:white;
+}
+
+h3 {
+  color: white;
+}
+
+h5 {
+  color:white;
+}
+
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 50px;
+  text-align: center;
+  text-decoration: none;
+}
+
+/* Add a hover effect if you want */
+.fa:hover {
+  opacity: 0.7;
+}
+
+/* Set a specific color for each brand */
+
+/* Facebook */
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+/* Twitter */
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-instagram {
+  background: #E1306C;
+  color: white;
+}
+
+.fa-linkedin-in {
+  background: rgb(79, 79, 201);
+  color: white;
+}
+
+
